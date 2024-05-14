@@ -1,0 +1,15 @@
+Z:\Programacion\4to\Github\2do bim\TP3\TP3_InfoPalooza\bin\Debug\net8.0\TP3_InfoPalooza.exe
+Z:\Programacion\4to\Github\2do bim\TP3\TP3_InfoPalooza\bin\Debug\net8.0\TP3_InfoPalooza.deps.json
+Z:\Programacion\4to\Github\2do bim\TP3\TP3_InfoPalooza\bin\Debug\net8.0\TP3_InfoPalooza.runtimeconfig.json
+Z:\Programacion\4to\Github\2do bim\TP3\TP3_InfoPalooza\bin\Debug\net8.0\TP3_InfoPalooza.dll
+Z:\Programacion\4to\Github\2do bim\TP3\TP3_InfoPalooza\bin\Debug\net8.0\TP3_InfoPalooza.pdb
+Z:\Programacion\4to\Github\2do bim\TP3\TP3_InfoPalooza\obj\Debug\net8.0\TP3_InfoPalooza.GeneratedMSBuildEditorConfig.editorconfig
+Z:\Programacion\4to\Github\2do bim\TP3\TP3_InfoPalooza\obj\Debug\net8.0\TP3_InfoPalooza.AssemblyInfoInputs.cache
+Z:\Programacion\4to\Github\2do bim\TP3\TP3_InfoPalooza\obj\Debug\net8.0\TP3_InfoPalooza.AssemblyInfo.cs
+Z:\Programacion\4to\Github\2do bim\TP3\TP3_InfoPalooza\obj\Debug\net8.0\TP3_InfoPalooza.csproj.CoreCompileInputs.cache
+Z:\Programacion\4to\Github\2do bim\TP3\TP3_InfoPalooza\obj\Debug\net8.0\TP3_InfoPalooza.sourcelink.json
+Z:\Programacion\4to\Github\2do bim\TP3\TP3_InfoPalooza\obj\Debug\net8.0\TP3_InfoPalooza.dll
+Z:\Programacion\4to\Github\2do bim\TP3\TP3_InfoPalooza\obj\Debug\net8.0\refint\TP3_InfoPalooza.dll
+Z:\Programacion\4to\Github\2do bim\TP3\TP3_InfoPalooza\obj\Debug\net8.0\TP3_InfoPalooza.pdb
+Z:\Programacion\4to\Github\2do bim\TP3\TP3_InfoPalooza\obj\Debug\net8.0\TP3_InfoPalooza.genruntimeconfig.cache
+Z:\Programacion\4to\Github\2do bim\TP3\TP3_InfoPalooza\obj\Debug\net8.0\ref\TP3_InfoPalooza.dll
