@@ -43,7 +43,31 @@ class Program
                 break;
 
                 case 4:
+                    int idBuscar = ingresarInt("Ingrese el ID de el cliente que quiere buscar:", 1, clientes+1);
+                    obj = Ticketera.buscarCliente(idBuscar);
+                    
+                    if (obj == null)
+                    {
+                        Console.WriteLine("ERROR! No se encontró el cliente");
+                    }
+                    else
+                    {
+                        int nuevaEntrada = ingresarInt("Ingrese la nueva entrada que desea comprar", 1, 4);
+                        bool puedeComprar = Ticketera.cambiarEntrada(obj, nuevaEntrada);
+                        if (puedeComprar)
+                        {
+                            obj.fechaInscripcion = ingresarFecha("Ingrese la nueva fecha de compra");
+                         
+                            // total abonado???
+                        }
+                        else
+                        {
+                            Console.WriteLine("ERROR! No se puede cambiar a ese tipo de entrada");
+                        }
+                    }
 
+                   
+                    
                 break;
             
             }
@@ -80,6 +104,7 @@ class Program
              Console.WriteLine(msj);
              fecha = DateTime.Parse(Console.ReadLine());
              if (fecha > DateTime.Today) Console.WriteLine("ERROR! Ingrese nuevamente");
+
         } while (fecha > DateTime.Today);
         return fecha; 
     }
@@ -92,25 +117,28 @@ class Program
             Console.WriteLine(msj);
             caracteres = Console.ReadLine();
             if (caracteres == string.Empty) Console.WriteLine("ERROR! Ingrese nuevamente");
+
         } while (caracteres == string.Empty);
         return caracteres;
     }
 
     public static int ingresarInt(string msj, int min, int max)
     {
-        int num;
+        bool Pude = false;
+        int valor = 0;
         do
         {
             Console.WriteLine(msj);
-            num = int.Parse(Console.ReadLine()); // poner TRY PARSEEEEEEEEEEEEEEEEEEEE
-            if (num < min || num > max) Console.WriteLine("ERROR! Ingrese nuevamente");
-        } while (num < min || num > max);
-        return num;
+            Pude = int.TryParse(Console.ReadLine(), out valor);
+            if (!Pude || valor < min || valor > max) Console.WriteLine("ERROR! Ingrese nuevamente");
+
+        } while (valor < min || valor > max || !Pude);
+        return valor;
     }
     public static int ingresarOpcion(string msj, int min, int max)
     {
         int op;
-
+        bool pude = false;
         
         Console.WriteLine("1. Nueva Inscripción");
         Console.WriteLine("2. Obtener Estadísticas del Evento");
@@ -121,10 +149,10 @@ class Program
         do
         {
             Console.WriteLine(msj);
-            op = int.Parse(Console.ReadLine()); // poner TRY PARSEEEEEEEEEEEEEEEEEEEE
-            if (op < min || op > max) Console.WriteLine("ERROR! Ingrese nuevamente");
+            pude = int.TryParse(Console.ReadLine(), out op); 
+            if (op < min || op > max || !pude) Console.WriteLine("ERROR! Ingrese nuevamente");
         
-        } while (op < min || op > max);
+        } while (op < min || op > max || !pude);
         return op;
     }
 }
